@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import InternalResources from './pages/InternalResources';
 import ExternalResources from './pages/ExternalResources';
+import FeedbackWidget from './components/FeedbackWidget';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/external" element={<ExternalResources />} />
         </Routes>
       </Layout>
+      <FeedbackWidget />
     </Router>
   );
 }
